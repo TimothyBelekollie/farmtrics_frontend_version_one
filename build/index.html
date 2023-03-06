@@ -8,11 +8,23 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Farmtrics</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="/build/css/output.css" />
-		<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
-		<script defer src="/build/script.js"></script>
-		<script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<link 
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"/>
+		<link 
+			rel="stylesheet"
+			href="/build/css/output.css"/>
+		<link 
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+			rel="stylesheet"/>
+		<script 
+			defer src="/build/script.js">
+		</script>
+		<script defer src="https://unpkg.com/swiper/swiper-bundle.min.js">
+		</script>
 	</head>
 	<body class="min-h-full">
 		<!--Content Wrapper-->
@@ -22,281 +34,395 @@
 			<header class=" h-20 fixed w-full top-0 z-20 "> 
 
 				<nav class="flex h-full md:justify-around justify-between items-center relative w-full">
-					<div class="relative">
+					<!-- Mobile Nav Buttons -->
+					<button 
+						id="mobile-open-button" 
+						class="text-4xl focus:outline-none md:hidden
+						pl-4 cursor-pointer"> &#9776</button>
+					<button 
+						id="mobile-close-button" 
+						class="hidden text-6xl focus:outline-none md:hidden
+						pl-4 cursor-pointer">&times;</button>
+					<!-- End of Mobile Nav Buttons -->
+
+					<div class="relative ">
 						<h1 class="text-3xl font-bold">
 							<a href="#home">Farmtrics </a>
 						</h1>
 					</div>
-					<button id="mobile-open-button" class="text-4xl focus:outline-none md:hidden absolute right-7 cursor-pointer"> &#9776</button>
-					<button id="mobile-close-button" class="hidden text-6xl focus:outline-none md:hidden absolute right-6 top-1 cursor-pointer">&times;</button>
-					
+
+
 					<ul
-						class="chev-parent  text-md [&>li>a]:py-5 [&>li>a]:px-3 md:flex hidden lg:gap-4 lg:mr-10"
-					>
-						<li class="group relative"><a href="#home">Home <i class="fa-solid fa-chevron-down fa-sm"></i> <i class="fa-solid fa-chevron-up hidden"></i></a> <ul
-							class="ul-hidden hidden absolute top-10 bg-white rounded [&>li>a]:py-1 [&>li>a]:px-3 shadow-md w-56"
-						>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all"
-									>
-									<span>Retail Execution</span></a
-								>
-							</li>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all"
-									>
-									<span>Mobile Inspection</span></a
-								></li
-							>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all"
-									>
-									<span>Sales Force Automation</span></a
-								></li
-							>
-						</ul></li>
-						<li class="group relative"><a href="#services">Services <i class="fa-solid fa-chevron-down fa-sm"></i> <i class="fa-solid fa-chevron-up hidden"></i></a> <ul
-							class="ul-hidden hidden absolute top-10 bg-white rounded [&>li>a]:py-1 [&>li>a]:px-3 shadow-md w-56"
-						>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all"
-									>
-									<span>Retail Execution</span></a
-								>
-							</li>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all"
-									>
-									<span>Mobile Inspection</span></a
-								></li
-							>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all"
-									>
-									<span>Sales Force Automation</span></a
-								></li
-							>
-						</ul></li>
-						<li class="group relative"><a href="#blog">Blog <i class="fa-solid fa-chevron-down fa-sm"></i> <i class="fa-solid fa-chevron-up hidden"></i></a> <ul
-							class="ul-hidden hidden absolute top-10 bg-white rounded [&>li>a]:py-1 [&>li>a]:px-3 shadow-md w-56"
-						>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all"
-									>
-									<span>Retail Execution</span></a
-								>
-							</li>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all"
-									>
-									<span>Mobile Inspection</span></a
-								></li
-							>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all"
-									>
-									<span>Sales Force Automation</span></a
-								></li
-							>
-						</ul></li>
-						<li class="group relative "><a href="pricing.html">Pricing</a></li>
-						
-						<li class="group relative"
-							><a href="#"><span id="languages">English</span> <i class="fa-solid fa-chevron-down fa-sm"></i> <i class="fa-solid fa-chevron-up hidden"></i></a>
+						class="chev-parent  text-md [&>li>a]:py-5
+						[&>li>a]:px-3 md:flex hidden lg:gap-4 lg:mr-10">
+
+						<li class="group relative">
+							<a href="#">
+								Usecases 
+								<i class="fa-solid fa-chevron-down fa-sm"></i>
+								<i class="fa-solid fa-chevron-up hidden"></i>
+							</a>
 							<ul
-								class="ul-hidden hidden absolute top-10 bg-white rounded [&>li>a]:py-2 [&>li>a]:px-8 shadow-md" id="languages-type"
-							>
-								<li
-									><a
+								class="ul-hidden hidden absolute top-10 bg-white
+							 	rounded [&>li>a]:py-1 [&>li>a]:px-3 shadow-md w-56">
+								<li>
+									<a
 										href="#"
-										class="flex justify-center gap-1 items-center duration-500 transition-all lang"
-										>
-										<span>English</span></a
-									>
+										class="hover:bg-blue-600 flex gap-1 
+										items-center duration-500 transition-all">
+										<span>Retail Execution</span>
+									</a>
 								</li>
-								<li
-									><a
+								<li>
+									<a
 										href="#"
-										class="flex justify-center gap-1 items-center duration-500 transition-all lang"
-										>
-										<span>Français</span></a
-									></li
-								>
-								<li
-									><a
+										class="hover:bg-blue-600 flex gap-1 
+										items-center duration-500 transition-all">
+										<span>Mobile Inspection</span>
+									</a>
+								</li>
+								<li>
+									<a
 										href="#"
-										class="flex justify-center gap-1 items-center duration-500 transition-all lang"
-										>
-										<span>Español</span></a
-									></li
-								>
+										class="hover:bg-blue-600 flex gap-1 
+										items-center duration-500 transition-all">
+										<span>Sales Force Automation</span>
+									</a>
+								</li>
 							</ul>
-							</li>
+						</li>
+
+						<li class="group relative">
+							<a href="#">
+								Templates 
+								<i class="fa-solid fa-chevron-down fa-sm"></i>
+								<i class="fa-solid fa-chevron-up hidden"></i>
+							</a>
+							<ul
+							class="ul-hidden hidden absolute top-10 bg-white 
+							rounded [&>li>a]:py-1 [&>li>a]:px-3 shadow-md w-56">
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1 
+										items-center duration-500 transition-all">
+										<span>Retail Execution</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1 
+										items-center duration-500 transition-all">
+										<span>Mobile Inspection</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1 
+										items-center duration-500 transition-all">
+										<span>Sales Force Automation</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="group relative">
+							<a href="#">
+								Company 
+								<i class="fa-solid fa-chevron-down fa-sm"></i>
+								<i class="fa-solid fa-chevron-up hidden"></i>
+							</a> 
+							<ul
+								class="ul-hidden hidden absolute top-10 bg-white
+								rounded [&>li>a]:py-1 [&>li>a]:px-3 shadow-md w-56">
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1 
+										items-center duration-500 transition-all">
+										<span>Retail Execution</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1 
+										items-center duration-500 transition-all">
+										<span>Mobile Inspection</span>
+									</a>
+								</li>
+								<li>
+									<a 
+										href="#" 
+										class="hover:bg-blue-600 flex gap-1 
+										items-center duration-500 transition-all">
+										<span>Sales Force Automation</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="group relative">
+							<a href="#">
+								<span>Resources </span>
+								<i class="fa-solid fa-chevron-down fa-sm"></i>
+								<i class="fa-solid fa-chevron-up hidden fa-sm"></i>
+							</a>
+						</li>
+
+						<li class="group relative ">
+							<a href="pricing.html">Pricing</a>
+						</li>
+						
+						<li class="group relative">
+							<a href="#">
+								<span id="languages">English</span>
+								<i class="fa-solid fa-chevron-down fa-sm"></i>
+								<i class="fa-solid fa-chevron-up fa-sm hidden"></i>
+							</a>
+							<ul
+								class="ul-hidden hidden absolute top-10 bg-white
+								rounded [&>li>a]:py-[12px] [&>li>a]:px-8 shadow-md" id="languages-type">
+								<li>
+									<a
+										href="#"
+										class="flex justify-center gap-1
+										items-center duration-500 transition-all lang">
+										<span>English</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="flex justify-center gap-1
+										items-center duration-500 transition-all lang">
+										<span>Français</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="flex justify-center gap-1
+										items-center duration-500 transition-all lang">
+										<span>Español</span>
+									</a>
+								</li>
+							</ul>
+						</li>
 					</ul>
 
-					<div class="bg-primary rounded-[14px] drop-shadow-sm">
-					
-						<a href="Login.html" class="px-10 py-3 inline-block  text-white">Login</a>
+					<div class="bg-primary rounded-[14px] drop-shadow-sm hidden md:block">
+						<a href="Login.html" class="px-10 py-3 inline-block text-white">Login</a>
 					</div>
-					
-					
+		
 				</nav>
 
 
 			
 				<!--Mobile nav menu-->
-				<div id="mobile-nav-container" class="md:hidden font-bold absolute bg-primary bg-opacity-80  text-textLight w-screen transition duration-400 ease-in-out transform -translate-x-full"> 
+				<div 
+					id="mobile-nav-container"
+					class="md:hidden font-bold absolute bg-primary bg-opacity-80  text-textLight
+					w-screen transition duration-400 ease-in-out transform -translate-x-full"> 
 					<ul
-					class="chev-parent bg-primary bg-opacity-80 rounded [&>li>a]:py-5 [&>li>a]:px-8 shadow-md "
-				>
-					<li><a class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all" href="#home">Home <i class="fa-solid fa-chevron-down"></i> <i class="fa-solid fa-chevron-up hidden"></i></a><ul
-						class="ul-hidden hidden bg-secondary rounded bg-opacity-80 [&>li>a]:py-4 [&>li>a]:px-3 shadow-md w-full"
-					>
-						<li
-							><a
-								href="#"
-								class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all justify-center"
-								>
-								<span>Retail Execution</span></a
-							>
+						class="chev-parent bg-primary bg-opacity-80 
+						rounded [&>li>a]:py-5 [&>li>a]:px-8 shadow-md ">
+						<li>
+							<a 
+								class="hover:bg-blue-600 flex justify-center 
+								gap-1 items-center duration-500 transition-all" 
+								href="#">
+								UseCases
+								<i class="fa-solid fa-chevron-down"></i>
+								<i class="fa-solid fa-chevron-up hidden"></i>
+							</a>
+							<ul
+								class="ul-hidden hidden bg-secondary rounded 
+								bg-opacity-80 [&>li>a]:py-4 [&>li>a]:px-3 shadow-md w-full">
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Retail Execution</span>
+										</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Mobile Inspection</span>
+										</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Sales Automation</span>
+										</a>
+								</li>
+							</ul>
 						</li>
-						<li
-							><a
-								href="#"
-								class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all justify-center"
-								>
-								<span>Mobile Inspection</span></a
-							></li
-						>
-						<li
-							><a
-								href="#"
-								class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all justify-center"
-								>
-								<span>Sales Force Automation</span></a
-							></li
-						>
-					</ul></li>
-					<li><a class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all"  href="#services">Services <i class="fa-solid fa-chevron-down"></i> <i class="fa-solid fa-chevron-up hidden"></i></a><ul
-						class="ul-hidden hidden bg-secondary rounded bg-opacity-80 [&>li>a]:py-4 [&>li>a]:px-3 shadow-md w-full"
-					>
-						<li
-							><a
-								href="#"
-								class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all justify-center"
-								>
-								<span>Retail Execution</span></a
-							>
+						<li>
+							<a 
+								class="hover:bg-blue-600 flex justify-center 
+								gap-1 items-center duration-500 transition-all" 
+								href="#">
+								Templates
+								<i class="fa-solid fa-chevron-down"></i>
+								<i class="fa-solid fa-chevron-up hidden"></i>
+							</a>
+							<ul
+								class="ul-hidden hidden bg-secondary rounded 
+								bg-opacity-80 [&>li>a]:py-4 [&>li>a]:px-3 shadow-md w-full">
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Retail Execution</span>
+										</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Mobile Inspection</span>
+										</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Sales Automation</span>
+										</a>
+								</li>
+							</ul>
 						</li>
-						<li
-							><a
-								href="#"
-								class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all justify-center"
-								>
-								<span>Mobile Inspection</span></a
-							></li
-						>
-						<li
-							><a
-								href="#"
-								class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all justify-center"
-								>
-								<span>Sales Force Automation</span></a
-							></li
-						>
-					</ul></li>
-					<li><a class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all"  href="#blog">Blog <i class="fa-solid fa-chevron-down"></i> <i class="fa-solid fa-chevron-up hidden"></i></a><ul
-						class="ul-hidden hidden bg-secondary rounded bg-opacity-80 [&>li>a]:py-4 [&>li>a]:px-3 shadow-md w-full"
-					>
-						<li
-							><a
-								href="#"
-								class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all justify-center"
-								>
-								<span>Retail Execution</span></a
-							>
+						<li>
+							<a 
+								class="hover:bg-blue-600 flex justify-center 
+								gap-1 items-center duration-500 transition-all" 
+								href="#">
+								Company
+								<i class="fa-solid fa-chevron-down"></i>
+								<i class="fa-solid fa-chevron-up hidden"></i>
+							</a>
+							<ul
+								class="ul-hidden hidden bg-secondary rounded 
+								bg-opacity-80 [&>li>a]:py-4 [&>li>a]:px-3 shadow-md w-full">
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Retail Execution</span>
+										</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Mobile Inspection</span>
+										</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Sales Automation</span>
+										</a>
+								</li>
+							</ul>
 						</li>
-						<li
-							><a
-								href="#"
-								class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all justify-center"
-								>
-								<span>Mobile Inspection</span></a
-							></li
-						>
-						<li
-							><a
-								href="#"
-								class="hover:bg-blue-600 flex gap-1 items-center duration-500 transition-all justify-center"
-								>
-								<span>Sales Force Automation</span></a
-							></li
-						>
-					</ul></li>
-					<li><a class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all"    href="#">Pricing</a></li>
-					<li><a class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all"  href="Login.html">Login</a></li>
-					<li class="group relative"
-						><a class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all"  href="#"><i class="fa-solid fa-globe"></i> <span id="languages">English</span> <i class="fa-solid fa-chevron-down"></i> <i class="fa-solid fa-chevron-up hidden"></i></a>
-						<ul
-							class="ul-hidden hidden bg-secondary bg-opacity-80 rounded [&>li>a]:py-5 [&>li>a]:px-8 shadow-md" id="languages-type"
-						>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all lang"
-									><img
-										class="h-3 w-5"
-										src="./images/flag/US.jpg"
-										alt="US flag"
-									/>
-									<span>English</span></a
-								>
-							</li>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all lang"
-									><img
-										class="h-3 w-5"
-										src="./images/flag/FR.jpg"
-										alt="French flag"
-									/>
-									<span>Français</span></a
-								></li
-							>
-							<li
-								><a
-									href="#"
-									class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all lang"
-									><img
-										class="h-3 w-5"
-										src="./images/flag/ES.jpg"
-										alt="Spanish flag"
-									/>
-									<span>Español</span></a
-								></li
-							>
-						</ul></li
-					>
-				</ul>
+						<li>
+							<a 
+								class="hover:bg-blue-600 flex justify-center 
+								gap-1 items-center duration-500 transition-all" 
+								href="#">
+								Resources 
+								<i class="fa-solid fa-chevron-down"></i>
+								<i class="fa-solid fa-chevron-up hidden"></i>
+							</a>
+							<ul
+								class="ul-hidden hidden bg-secondary rounded 
+								bg-opacity-80 [&>li>a]:py-4 [&>li>a]:px-3 shadow-md w-full">
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Retail Execution</span>
+										</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Mobile Inspection</span>
+										</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex gap-1
+										items-center duration-500 transition-all justify-center">
+										<span>Sales Automation</span>
+										</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="flex justify-center gap-1 items-center duration-500 transition-all">
+								Pricing
+							</a>
+						</li>
+						<li class="group relative">
+							<a href="#" class="hover:bg-blue-600 flex justify-center gap-1 items-center duration-500 transition-all">
+								<span id="languages">English</span>
+								<i class="fa-solid fa-chevron-down"></i>
+								<i class="fa-solid fa-chevron-up hidden"></i>
+							</a>
+							<ul
+								class="ul-hidden hidden bg-secondary 
+								bg-opacity-80 rounded [&>li>a]:py-5 [&>li>a]:px-8 shadow-md" 
+								id="languages-type">
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex justify-center gap-1
+										items-center duration-500 transition-all lang">
+										<span>English</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex justify-center gap-1
+										items-center duration-500 transition-all lang">
+										<span>Français</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:bg-blue-600 flex justify-center gap-1
+										items-center duration-500 transition-all lang">
+										<span>Español</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</header> 	
 			<!-- End of Nav -->
